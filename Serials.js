@@ -1,14 +1,11 @@
 
 import React from 'react';
 import {
-   FlatList, ScrollView
+   FlatList
 } from 'react-native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Card, Title, Button } from "react-native-paper";
+import { Card, Title } from "react-native-paper";
 import axios from "axios";
 import Indicator from "./Indicator";
-
-const Stack = createNativeStackNavigator();
 
 class Serials extends React.Component{
 

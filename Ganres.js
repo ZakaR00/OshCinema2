@@ -2,10 +2,8 @@ import React from 'react';
 import {
   FlatList,
 } from "react-native";
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Card } from "react-native-paper";
 import axios from "axios";
-const Stack = createNativeStackNavigator();
 
 class Ganr extends React.Component{
 
@@ -56,4 +54,5 @@ class Ganr extends React.Component{
     )
   }
 }
+
 export default Ganr;

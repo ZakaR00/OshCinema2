@@ -3,7 +3,7 @@ import {
   FlatList,
 } from "react-native";
 import axios from "axios";
-import { Card, Title, Button } from "react-native-paper";
+import { Card, Title } from "react-native-paper";
 import Indicator from "./Indicator";
 
 class Tvas extends React.Component{
@@ -51,21 +51,23 @@ class Tvas extends React.Component{
     return (
       <>
         <FlatList
-          numColumns={2} horizontal={false}
+          numColumns={2}
+          horizontal={false}
           style={{
-            backgroundColor: `rgba(155, 224, 216, 0.88)`, padding: 10,
+            backgroundColor: `rgba(155, 224, 216, 0.88)`,
+            padding: 10,
           }}
           data={this.state.trend}
-          renderItem={({item})=>{
+          renderItem={({item}) => {
             return(
               <Card
-                onPress={()=>this.liza(item)}
+                onPress={() => this.liza(item)}
                 style={{
                   margin: 10,
                   width: `50%`,
                   height: `90%`,
                 }}>
-                <Card.Cover   source={{ uri:`https://image.tmdb.org/t/p/w500${item.poster_path}` }} />
+                <Card.Cover source={{ uri:`https://image.tmdb.org/t/p/w500${item.poster_path}` }} />
                 <Card.Content>
                   <Title>{item.title}</Title>
                 </Card.Content>
@@ -77,4 +79,5 @@ class Tvas extends React.Component{
     )
   }
 }
-export default Tvas
+
+export default Tvas;

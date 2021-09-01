@@ -1,10 +1,8 @@
-
 import React from 'react';
 import {
   ScrollView,
 } from "react-native";
-import axios from "axios";
-import { Card, Title, Button } from "react-native-paper";
+import { Card, Title } from "react-native-paper";
 import Indicator from "./Indicator";
 
 class Fil extends React.Component{

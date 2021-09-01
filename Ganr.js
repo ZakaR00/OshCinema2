@@ -1,14 +1,9 @@
 import React from 'react';
 import {
  ScrollView,
-  View,
 } from "react-native";
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
-import MaterialBottom from "./MaterialBottom";
 import { Card } from "react-native-paper";
 import axios from "axios";
-const Stack = createNativeStackNavigator();
 
 class Ganr extends React.Component{
 
@@ -25,7 +20,7 @@ class Ganr extends React.Component{
   film = async () => {
     try {
       const as = await axios.get(`
-https://api.themoviedb.org/3/discover/tv/?api_key=1ea54fff90d26ae7dc1f5e21fe637664&language=ru&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres${this.props.route.params.id}`)
+https://api.themoviedb.org/3/discover/tv/?api_key=1ea54fff90d26ae7dc1f5e21fe637664&language=ru&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${this.props.route.params.id}`)
 
       console.log(as)
       this.setState({
@@ -62,4 +57,5 @@ https://api.themoviedb.org/3/discover/tv/?api_key=1ea54fff90d26ae7dc1f5e21fe6376
     )
   }
 }
+
 export default Ganr;

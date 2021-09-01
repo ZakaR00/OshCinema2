@@ -1,10 +1,7 @@
-
 import React from 'react';
-
 import { NavigationContainer } from '@react-navigation/native';
 import { Provider as PaperProvider } from 'react-native-paper';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-import Icon from 'react-native-vector-icons/dist/MaterialIcons';
 import Cinema from "./Cinema"
 import Film from "./Film";
 import Serial from "./Serial";
@@ -28,4 +25,5 @@ class App extends React.Component{
     )
   }
 }
+
 export default App;

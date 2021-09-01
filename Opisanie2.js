@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Card, Title, Button } from "react-native-paper";
+import { Card, Title } from "react-native-paper";
 import Indicator from "./Indicator";
 
 class Opisanie2 extends React.Component{

@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Ganr from "./Ganr"
 import Ganres from "./Ganres";
 import MaterialBottom from "./MaterialBottom";
+
 const Stack = createNativeStackNavigator();
 
 class Bottom extends React.Component{

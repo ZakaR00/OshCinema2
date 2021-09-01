@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Trend from "./Trend";
@@ -11,7 +10,7 @@ class Cinema extends React.Component{
     return (
      <>
        <Stack.Navigator>
-         <Stack.Screen options={{title:`OshCinema`}} name={`Trend`} component={Trend}/>
+         <Stack.Screen options={{title: `OshCinema`}} name={`Trend`} component={Trend}/>
          <Stack.Screen name={`Opisanie`} component={Opisanie}/>
        </Stack.Navigator>
      </>

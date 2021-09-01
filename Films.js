@@ -3,7 +3,7 @@ import {
   FlatList,
 } from "react-native";
 import axios from "axios";
-import { Card, Title, Button } from "react-native-paper";
+import { Card, Title } from "react-native-paper";
 import Indicator from "./Indicator";
 
 class Films extends React.Component{
@@ -78,4 +78,5 @@ class Films extends React.Component{
     )
   }
 }
+
 export default Films;

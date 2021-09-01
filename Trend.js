@@ -5,7 +5,6 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 
 const Tab = createMaterialTopTabNavigator();
 
-
 class Trend extends React.Component{
 
   render() {
