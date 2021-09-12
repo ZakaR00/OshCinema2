@@ -47,36 +47,35 @@ class Tele extends React.Component{
     if(this.state.indicator){
       return (
         <>
-          <Indicator/>
-        </>
-      )
-    }
-    return (
-      <>
-        <FlatList
-          numColumns={2} horizontal={false}
-          style={{  backgroundColor: `rgba(155, 224, 216, 0.88)`, padding: 10, }}
-          data={this.state.trend}
-          renderItem={({item})=>{
-            return(
-              <Card
-                onPress={()=>this.opisanie(item)}
-                style={{
-                  margin: 10,
-                  width: `50%`,
-                  height: `90%`,
-                }}>
-                <Card.Cover  source={{ uri: `https://image.tmdb.org/t/p/w500${item.poster_path}`  }} />
-                <Card.Content>
-                  <Title style={{textAlign: `center`}}>{item.name}</Title>
-                  <Title style={{textAlign: `center`, fontSize: 13 }} >{item.first_air_date}</Title>
-                </Card.Content>
-              </Card>
-            )
-          }}
-        />
-      </>
-    )
+           <Indicator/>*///         </>
+//       )
+//     }
+//     return (
+//       <>
+//         <FlatList
+//           numColumns={2} horizontal={false}
+//           style={{  backgroundColor: `rgba(155, 224, 216, 0.88)`, padding: 10, }}
+//           data={this.state.trend}
+//           renderItem={({item})=>{
+//             return(
+//               <Card
+//                 onPress={()=>this.opisanie(item)}
+//                 style={{
+//                   margin: 10,
+//                   width: `50%`,
+//                   height: `90%`,
+//                 }}>
+//                 <Card.Cover  source={{ uri: `https://image.tmdb.org/t/p/w500${item.poster_path}`  }} />
+//                 <Card.Content>
+//                   <Title style={{textAlign: `center`}}>{item.name}</Title>
+//                   <Title style={{textAlign: `center`, fontSize: 13 }} >{item.first_air_date}</Title>
+//                 </Card.Content>
+//               </Card>
+//             )
+//           }}
+//         />
+//       </>
+//     )
   }
 }
-export default Tele;
+ export default Tele;
